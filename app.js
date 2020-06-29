@@ -1,3 +1,9 @@
+/*
+    Copyright (c) 2020 - present, DITDOT Ltd. - MIT Licence
+    https://www.ditdot.hr/en
+    https://github.com/ditdot-dev/dark-mode-example
+*/
+
 const doc = document.documentElement;
 const body = document.querySelector("body");
 const background = document.querySelector(".background");
