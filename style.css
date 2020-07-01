@@ -18,6 +18,20 @@
   font-style: normal;
 }
 
+:root {
+  --visibility: visible;
+  --filter: none;
+  --animation-main: none;
+  --animation-duration: none;
+  --background-image: none;
+  --background-size: none;
+  --offset-path: none;
+  --offset-distance: none;
+  --offset-rotate: none;
+  --animation-logo: none;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -30,17 +44,19 @@ body {
   width: 100%;
   overflow: hidden;
   background-color: #fff;
+  filter: var(--filter);
 }
 
 .background {
   max-width: 100%;
-  min-width: 200px;
   height: 100vh;
   background-color: #fff;
   padding: 24px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  background-image: var(--background-image);
+  background-size: var(--background-size);
 }
 
 /* HEADER */
@@ -50,6 +66,13 @@ header {
   justify-content: space-between;
   grid-area: 1/1/2/-1;
   align-items: start;
+}
+
+.logo {
+  offset-path: var(--offset-path);
+  offset-distance: var(--offset-distance);
+  offset-rotate: var(--offset-rotate);
+  animation: var(--animation-logo);
 }
 
 nav {
@@ -76,6 +99,7 @@ h1 {
   font-size: clamp(3rem, 12 * (1vh + 1vw) / 2, 8rem);
   grid-area: 3/1/4/7;
   text-align: center;
+  user-select: none;
 }
 
 /* MODE SWITCH */
@@ -92,6 +116,7 @@ h1 {
 .mode-label {
   font-size: 1rem;
   margin-bottom: 16px;
+  visibility: var(--visibility)
 }
 
 .switch {
@@ -160,15 +185,12 @@ input:checked + .slider:before {
   height: min(300px, 30vh);
 }
 
-/*ANIMATION */
-
-/*logo animation */
-.animate {
-  /*offset-path: path( "M 300, 300 m -300, 0 a 300,300 0 1,0 600,0 a 300,300 0 1,0 -600,0z");*/
-  offset-distance: 0%;
-  offset-rotate: auto 45deg;
-  animation: rocket 6s linear infinite;
+.head {
+   animation: var(--animation-main);
+   
 }
+
+/*ANIMATION */
 
 @keyframes rocket {
   from {
@@ -211,15 +233,17 @@ input:checked + .slider:before {
     transform-origin: 50% 30%;
   }
 }
-.rotating {
-  animation: rotating 10s ease-out infinite;
-}
 
-.stars {
-  background-image: url("./assets/stars-black.svg");
-  background-size: cover;
+.dark-mode {
+  --visibility: hidden;
+  --filter: invert(100%);
+  --animation-main: rotating 10s ease-out infinite;
+  --background-image: url("./assets/stars-black.svg");
+  --background-size: cover;
+  --offset-distance: 0%;
+  --offset-rotate: auto 45deg;
+  --animation-logo: rocket 6s linear infinite;
 }
-
 
 @media only screen and (max-width: 350px) {
   .list-item {
