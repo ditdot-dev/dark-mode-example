@@ -7,13 +7,10 @@
 @font-face {
   font-family: "distant_galaxyregular";
   src: url("./assets/web-fonts/distantgalaxy/DISTGRG_-webfont.eot");
-  src: url("./assets/web-fonts/distantgalaxy/DISTGRG_-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/web-fonts/distantgalaxy/DISTGRG_-webfont.woff") format("woff"),
-    url("./assets/web-fonts/distantgalaxy/DISTGRG_-webfont.ttf")
-      format("truetype"),
-    url("./assets/web-fonts/distantgalaxy/DISTGRG_-webfont.svg#distant_galaxyregular")
-      format("svg");
+  src: url("./assets/web-fonts/distantgalaxy/DISTGRG_-webfont.eot?#iefix") format("embedded-opentype"),
+       url("./assets/web-fonts/distantgalaxy/DISTGRG_-webfont.woff") format("woff"),
+       url("./assets/web-fonts/distantgalaxy/DISTGRG_-webfont.ttf") format("truetype"),
+       url("./assets/web-fonts/distantgalaxy/DISTGRG_-webfont.svg#distant_galaxyregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -30,7 +27,6 @@
   --offset-rotate: none;
   --animation-logo: none;
 }
-
 
 * {
   margin: 0;
@@ -76,9 +72,10 @@ header {
 }
 
 nav {
-  font-size: clamp(0.8rem, (1vh + 1vw), 1.5rem);
+  font-size: clamp(0.8rem, (1vh + 1vw), 1.2rem);
   font-weight: bold;
   width: clamp(250px, 30vw, 500px);
+  padding-top: .4em;
 }
 
 .list {
@@ -187,7 +184,6 @@ input:checked + .slider:before {
 
 .head {
    animation: var(--animation-main);
-   
 }
 
 /*ANIMATION */
