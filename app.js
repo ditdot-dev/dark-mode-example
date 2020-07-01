@@ -17,41 +17,45 @@ function load() {
       }, 0 a ${width / 2},${height / 2} 0 1,0 ${width},0 a ${width / 2},${
       height / 2
       } 0 1,0 ${-width},0z")`;
+
     return path;
   }
 
-  // MediaQueryList object
-  const useDark = window.matchMedia("(prefers-color-scheme: dark)");
-
-  //Checks & uncheks the switcher
+  // Checks & unchecks the switcher
   function checkToggle(check) {
     switcher.checked = check;
   }
 
   // Toggles the "dark-mode" class based on if the media query matches
-  function toggleDarkMode(add) {
-    checkToggle(add);
-    document.body.classList.toggle("dark-mode", add);
-    add
-      ? ((title.textContent = "Dark mode"),
-        (logo.style.offsetPath = calculatePath()))
-      : ((title.textContent = "Light mode"), (logo.style.offsetPath = "none"));
+  function toggleDarkMode(state) {
+    checkToggle(state);
+    document.body.classList.toggle("dark-mode", state);
+    if (state) {
+      title.textContent = "Dark mode";
+      logo.style.offsetPath = calculatePath();
+    } else {
+      title.textContent = "Light mode";
+      logo.style.offsetPath = "none";
+    }
   }
 
-  // Initial setting depending on the prefers-color-mode
-  toggleDarkMode(useDark.matches);
+  // MediaQueryList object
+  const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+  let dark = useDark.matches;
 
   // Listen for changes in the OS settings
-  useDark.addEventListener("change", (evt) => toggleDarkMode(evt.matches));
+  useDark.addListener((evt) => toggleDarkMode(evt.matches));
 
-  let dark = useDark.matches;
+  // Initial setting depending on the prefers-color-mode
+  toggleDarkMode(dark);
 
   function switchListener() {
     dark = !dark;
     toggleDarkMode(dark);
   }
+
   // Listen for switch change
   switcher.addEventListener("change", switchListener);
 }
 
-window.addEventListener("DOMContentLoaded", load);
+document.addEventListener("DOMContentLoaded", load);
