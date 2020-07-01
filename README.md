@@ -1,6 +1,6 @@
 # Dark Mode Example
 
-![Dark mode screenshot](/assets/dark-mode-screenshot-2.jpg)
+![Dark Mode Screenshot](assets\dark-mode-screenshot-2.JPG)
 
 Animated example of the dark mode feature made with the prefers-color-scheme media query. Automatically detects preferred color scheme based on the user's color scheme preference set at the system level. Toggle switch to override the preference set in the system.
 
