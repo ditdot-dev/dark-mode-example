@@ -1,10 +1,22 @@
-# Dark Mode Example
+# Dark Mode with prefers-color-scheme 🌗
+> Enable Dark Mode with prefers-color-scheme media query in Javascript and override with a mode switch
+
+Animated example of dark mode feature implemented with prefers-color-scheme and checked programatically with window.matchMedia() method
 
 <p align="center">
   <img src="https://github.com/ditdot-dev/dark-mode-example/blob/master/assets/dark-mode-screenshot-2.png?raw=true" alt="Dark Mode Screenshot"/>
 </p>
 
-Animated example of the dark mode feature made with the prefers-color-scheme media query. Automatically detects the preferred color scheme based on the user's color scheme preference set at the system level. Toggle the switch to override the preference set in the system.
+## Features 
+
+- automatically detects the preferred mode based on the color scheme preference set at the system level
+- colors are inverted with `filter: invert(100%)`
+- mode switch overrides the preference set in the system
+- activation of dark mode triggers the animation
+
+## Clone
+
+Clone this repo to your local machine using https://github.com/ditdot-dev/dark-mode-example.git
 
 ## License
 
