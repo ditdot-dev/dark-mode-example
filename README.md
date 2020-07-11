@@ -1,7 +1,7 @@
 # Dark Mode with prefers-color-scheme 🌗
 > Enable Dark Mode with prefers-color-scheme media query in Javascript and override with a mode switch
 
-Animated example of dark mode feature implemented with prefers-color-scheme and checked programatically with window.matchMedia() method
+Animated example of dark mode feature implemented with prefers-color-scheme and checked programatically with `window.matchMedia()` method.
 
 <p align="center">
   <img src="https://github.com/ditdot-dev/dark-mode-example/blob/master/assets/dark-mode-screenshot-2.png?raw=true" alt="Dark Mode Screenshot"/>
