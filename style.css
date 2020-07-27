@@ -20,8 +20,8 @@
   --filter: none;
   --animation-main: none;
   --animation-duration: none;
-  --background-image: none;
-  --background-size: none;
+  --background-image: url("./assets/stars-black.svg");
+  --background-size: cover;
   --offset-path: none;
   --offset-distance: none;
   --offset-rotate: none;
@@ -39,20 +39,28 @@ body {
   box-sizing: border-box;
   width: 100%;
   overflow: hidden;
-  background-color: #fff;
   filter: var(--filter);
 }
 
 .background {
   max-width: 100%;
   height: 100vh;
-  background-color: #fff;
-  padding: 24px;
+  background-color: #e9e9e9;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   background-image: var(--background-image);
   background-size: var(--background-size);
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 /* HEADER */
@@ -72,10 +80,10 @@ header {
 }
 
 nav {
-  font-size: clamp(0.8rem, (1vh + 1vw), 1.2rem);
+  font-size: clamp(0.8rem, (1vh + 1vw), 1.1rem);
   font-weight: bold;
   width: clamp(250px, 30vw, 500px);
-  padding-top: .4em;
+  padding-top: .5em;
 }
 
 .list {
@@ -114,7 +122,7 @@ h1 {
 .mode-label {
   font-size: 1rem;
   margin-bottom: 16px;
-  visibility: var(--visibility)
+  visibility: var(--visibility);
 }
 
 .switch {
@@ -231,20 +239,30 @@ input:checked + .slider:before {
   }
 }
 
+/*dark-mode*/
+
 .dark-mode {
   --visibility: hidden;
   --filter: invert(100%);
   --animation-main: rotating 10s ease-out infinite;
-  --background-image: url("./assets/stars-black.svg");
-  --background-size: cover;
   --offset-distance: 0%;
   --offset-rotate: auto 45deg;
   --animation-logo: rocket 6s linear infinite;
 }
 
-@media only screen and (max-width: 350px) {
+.dark-mode .background {
+  background-color: #fff;
+}
+
+.dark-mode .overlay{
+  background-color: rgba(255, 255, 255, 0);
+  transition: all .18s ease-in;
+}
+
+@media only screen and (max-width: 320px) {
   .list-item {
     display: block;
     margin-bottom: 4px;
   }
+  
 }
