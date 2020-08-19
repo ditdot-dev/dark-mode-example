@@ -20,4 +20,4 @@ Clone this repo to your local machine using https://github.com/ditdot-dev/dark-m
 
 ## License
 
-Licensed under the MIT License - see the LICENSE file for details
+[MIT](https://github.com/ditdot-dev/dark-mode-example/blob/master/LICENSE) license.
