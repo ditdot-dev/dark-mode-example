@@ -16,7 +16,15 @@ Animated example of dark mode feature implemented with prefers-color-scheme and 
 
 ## Clone
 
-Clone this repo to your local machine using https://github.com/ditdot-dev/dark-mode-example.git
+Clone this repo to your local machine 
+
+```shell
+$ git clone https://github.com/ditdot-dev/dark-mode-example.git
+```
+
+## Full Dark Mode Tutorial and More Examples
+
+[Dark Mode - The prefers-color-scheme Website Tutorial](https://www.ditdot.hr/en/dark-mode-website-tutorial)
 
 ## License
 
