@@ -4,12 +4,6 @@
     https://github.com/ditdot-dev/dark-mode-example
 */
 
-/*  Rocket logo animation is based on the CSS Motion Path properties
-    (offset-*) which are not supported by Safari browsers.
-    A possible solution for animation along a motion path is Greensock
-    MotionPathPlugin https://greensock.com/motionpath
-*/
-
 function load() {
   "use strict";
 
@@ -92,3 +86,9 @@ function load() {
 }
 
 document.addEventListener("DOMContentLoaded", load);
+
+/*  Rocket logo animation is based on the CSS Motion Path properties
+    (offset-*) which are not supported by Safari browsers.
+    A possible solution for animation along a motion path is Greensock
+    MotionPathPlugin https://greensock.com/motionpath
+*/
