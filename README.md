@@ -24,7 +24,8 @@ $ git clone https://github.com/ditdot-dev/dark-mode-example.git
 
 ## Full Dark Mode Tutorial and More Examples
 
-[Dark Mode - The prefers-color-scheme Website Tutorial](https://www.ditdot.hr/en/dark-mode-website-tutorial)
+- [Dark Mode - The prefers-color-scheme Website Tutorial](https://www.ditdot.hr/en/dark-mode-website-tutorial)
+- [Live Demo](https://www.ditdot.hr/demo/dark-mode-example)
 
 ## License
 
