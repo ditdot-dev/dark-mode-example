@@ -9,10 +9,11 @@ Animated example of dark mode feature implemented with prefers-color-scheme and 
 
 ## Features 
 
-- automatically detects the preferred mode based on the color scheme preference set at the system level using JavaScript
+- detects the preferred mode based on the color scheme preference set at the system level using JavaScript
 - colors are inverted with `filter: invert(100%)`
 - mode switch overrides the preference set in the system
 - activation of dark mode triggers the animation
+- [Live Demo](https://www.ditdot.hr/demo/dark-mode-example)
 
 ## Clone
 
@@ -25,7 +26,6 @@ $ git clone https://github.com/ditdot-dev/dark-mode-example.git
 ## Full Dark Mode Tutorial and More Examples
 
 - [Dark Mode - The prefers-color-scheme Website Tutorial](https://www.ditdot.hr/en/dark-mode-website-tutorial)
-- [Live Demo](https://www.ditdot.hr/demo/dark-mode-example)
 
 ## License
 
