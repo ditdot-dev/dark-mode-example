@@ -69,6 +69,7 @@ function load() {
   let darkModeState = useDark.matches;
 
   // Listen for changes in the OS settings
+  // addListener is used because older versions of Safari don't support addEventListener
   useDark.addListener(function(evt) {
     toggleDarkMode(evt.matches);
   });
