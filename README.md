@@ -27,6 +27,12 @@ $ git clone https://github.com/ditdot-dev/dark-mode-example.git
 
 - [Dark Mode - The prefers-color-scheme Website Tutorial](https://www.ditdot.hr/en/dark-mode-website-tutorial)
 
+
+## Stay in Touch
+
+* [Twitter](https://twitter.com/ditdot_info)
+* [DITDOT](https://www.ditdot.hr/en)
+
 ## License
 
 [MIT](https://github.com/ditdot-dev/dark-mode-example/blob/master/LICENSE) license.
