@@ -36,3 +36,6 @@ $ git clone https://github.com/ditdot-dev/dark-mode-example.git
 ## License
 
 [MIT](https://github.com/ditdot-dev/dark-mode-example/blob/master/LICENSE) license.
+
+Copyright (c) 2020 - present, DITDOT Ltd.
+
